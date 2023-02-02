@@ -64,7 +64,7 @@
       <!-- Features Section -->
       <section class="features-section">
         <div class="container">
-          <h2 class="hiden-title">Our Features</h2>
+          <h2 class="visually-hidden">Our Features</h2>
           <ul class="features list">
             <li class="feature-item">
               <div class="feature-item-icon-bcg">
@@ -406,13 +406,58 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
           <svg class="modal-close-icon">
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
+
+        <p class="modal-form-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-input-field">
+            <span class="modal-input-text">Name</span>
+            <span class="modal-input-wrapper">
+              <input type="text" name="user-name" class="modal-input" required>
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-input-field">
+            <span class="modal-input-text">Phone</span>
+            <span class="modal-input-wrapper">
+              <input type="tel" name="user-phone-number" class="modal-input" required>
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-input-field">
+            <span class="modal-input-text">Email</span>
+            <span class="modal-input-wrapper">
+              <input type="email" name="user-email" class="modal-input" required>
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-envelop"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-comment-field">
+            <span class="modal-comment-text">Comment</span>
+            <textarea name="comment" placeholder="Text input" class="modal-comment"></textarea>
+          </label>
+
+          <label class="modal-check-desc">
+            <input type="checkbox" name="user-policy" class="modal-check" checked required>
+            I accept the terms and conditions of the <a class="privacy-link">Privacy Policy</a>
+          </label>
+
+          <button type="submit" class="sbmt-btn btn">Send</button>
+        </form>
       </div>
     </div>
 
