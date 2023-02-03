@@ -482,7 +482,7 @@ img {
 }
 
 .footer-form {
-  margin-left: 80px;
+  margin-left: auto;
   width: 453px;
   display: flex;
 }
