@@ -507,6 +507,12 @@ img {
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
+  transition: outline var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
+}
+
+.footer-form-input:focus {
+  outline: none;
+  border-color: var(--pressed-state-color);
 }
 
 .footer-form-btn {
@@ -587,11 +593,11 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   text-decoration: none;
   font-style: normal;
+  cursor: pointer;
   transition: box-shadow var(--transition-dur-and-func);
 }
 
 .project-item:is(:hover, :focus) .project-item-link {
-  cursor: pointer;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -737,6 +743,7 @@ img {
   border: 1px solid var(--modal-input-border);
   border-radius: 4px;
   padding: 8px 16px 8px 38px;
+  transition: outline var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
 }
 
 .modal-input-icon {
@@ -747,6 +754,7 @@ img {
   width: 12px;
   height: 12px;
   fill: var(--dark-color);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .modal-input:focus {
@@ -774,6 +782,7 @@ img {
   font-size: 12px;
   line-height: 1.33;
   color: var(--dark-color);
+  transition: outline var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
 }
 
 .modal-comment::placeholder {
@@ -805,6 +814,8 @@ img {
   border-radius: 2px;
   cursor: pointer;
   fill: transparent;
+  transition: border var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
 }
 
 .modal-check:checked + .modal-check-desc > .modal-check-box-icon {
