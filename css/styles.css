@@ -751,10 +751,23 @@ img {
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
   fill: var(--dark-color);
   transition: fill var(--transition-dur-and-func);
+}
+
+.person {
+  width: 12px;
+  height: 12px;
+}
+
+.phone {
+  width: 13px;
+  height: 12px;
+}
+
+.envelop {
+  width: 15px;
+  height: 12px;
 }
 
 .modal-input:focus {
