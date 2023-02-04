@@ -818,22 +818,33 @@ img {
   color: #757575;
 }
 
-.modal-check-box-icon {
+.modal-check-box-wrapper {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   width: 16px;
   height: 16px;
   border: 1.25px solid var(--dark-color);
   border-radius: 2px;
   cursor: pointer;
-  fill: transparent;
-  transition: border var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
-    fill var(--transition-dur-and-func);
+  transition: border var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
-.modal-check:checked + .modal-check-desc > .modal-check-box-icon {
+.modal-check-box-icon {
+  width: 10px;
+  height: 8px;
+  fill: transparent;
+  transition: fill var(--transition-dur-and-func);
+}
+
+.modal-check:checked + .modal-check-desc .modal-check-box-wrapper {
   border: 1.25px solid var(--pressed-state-color);
   background-color: var(--pressed-state-color);
+}
+
+.modal-check:checked + .modal-check-desc .modal-check-box-icon {
   fill: var(--light-color);
 }
 
